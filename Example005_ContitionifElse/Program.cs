@@ -1,4 +1,4 @@
-﻿Console.Write = ("Введите имя ");
+﻿Console.Write("Введите имя ");
 string username = Console.ReadLine();
 
 if (username == "маша")
