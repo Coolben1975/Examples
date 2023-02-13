@@ -1,4 +1,4 @@
-﻿Console.Write = ("Введите имя: ");
+﻿Console.Write = ("Введите имя ");
 string username = Console.ReadLine();
 
 if (username == "маша")
@@ -11,5 +11,5 @@ else
 
 {
 	Console.Write("Привет, ");
-	Console.WriteLine(username);
+	Console.Write(username);
 }
