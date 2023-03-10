@@ -1,4 +1,5 @@
-﻿// string[,] table = new string[2, 5];
+﻿// ---------- формирование и вывод двумерного строчного массива
+// string[,] table = new string[2, 5];
 // // table[0,0] table[0,1] table[0,2] table[0,4]
 // // table[1,0] table[1,1] table[1,2] table[1,4]
 // table[1, 2] = "слово";
@@ -12,7 +13,7 @@
 // }
 
 
-// формирование и вывод двумерного цифрового массива
+// ---------- формирование и вывод двумерного цифрового массива
 // void PrintArray(int[,] matr)   //медот печати
 // {
 // 	for (int i = 0; i < matr.GetLength(0); i++)
@@ -42,7 +43,7 @@
 // FillArray(matrix);
 // PrintArray(matrix);
 
-// Раскрашиваем
+// ---------- Раскрашиваем
 
 // int[,] pic = new int[,] {
 // { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -98,4 +99,42 @@
 // PrintImage(pic);
 // FillImage(13, 13);
 // PrintImage(pic);
+
+// --------- Рекурсия
+// int Factorial(int n)
+// {
+// 	if (n == 1) return 1;
+// 	else return n * Factorial(n - 1);
+// }
+
+// Console.WriteLine(Factorial(4)); // передаем число факториал которого ищем
+
+/* ------- Фибоначи
+f(1) = 1
+f(2) = 1
+f(n) = f(n-1) + f(n-2) */
+
+// int Fibonacci(int n)     // целые
+// {
+// 	if (n == 1 || n == 2) return 1;
+// 	else return Fibonacci(n - 1) + Fibonacci(n - 2);
+// }
+
+// for (int i = 1; i < 10; i++)
+// {
+// 	Console.WriteLine(Fibonacci(i));
+// }
+
+// ------------ double
+// double Fibonacci(int n)     // double
+// {
+// 	if (n == 1 || n == 2) return 1;
+// 	else return Fibonacci(n - 1) + Fibonacci(n - 2);
+// }
+
+// for (int i = 1; i < 45; i++)
+// {
+// 	Console.WriteLine($"f({i}) = {Fibonacci(i)}");
+// }
+
 
